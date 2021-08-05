@@ -37,7 +37,6 @@ jobs:
           skip-pkg-cache: true
 
       - name: Make release binaries
-        shell: bash
         run: make dist
 
       - name: Get the version
