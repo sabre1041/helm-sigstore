@@ -5,7 +5,7 @@ on:
       - "v*.*.*"
 
 jobs:
-  build:
+  release:
     runs-on: ubuntu-latest
     steps:
       - name: Set up Go 1.16
@@ -37,6 +37,7 @@ jobs:
           skip-pkg-cache: true
 
       - name: Make release binaries
+        shell: bash
         run: make dist
 
       - name: Get the version
