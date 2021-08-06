@@ -14,7 +14,9 @@
 # limitations under the License.
 
 # Get the currently used golang install path (in GOPATH/bin, unless GOBIN is set)
-SHELL=/bin/bash
+ifdef MAKEFILE_SHELL
+SHELL=$(MAKEFILE_SHELL)
+endif
 ifeq (,$(shell go env GOBIN))
 GOBIN=$(shell go env GOPATH)/bin
 else
