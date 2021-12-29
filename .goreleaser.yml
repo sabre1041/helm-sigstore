@@ -86,7 +86,7 @@ release:
   prerelease: allow
   draft: true # allow for manual edits
   github:
-    owner: sigstore
+    owner: sabre1041
     name: helm-sigstore
   footer: |
     ### Thanks for all contributors!
