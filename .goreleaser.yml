@@ -10,8 +10,8 @@ before:
   hooks:
   - go mod tidy
 
-gomod:
-  proxy: true
+#gomod:
+#  proxy: true
 
 source:
   enabled: true
